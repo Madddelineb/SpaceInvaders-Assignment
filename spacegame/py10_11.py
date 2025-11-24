@@ -231,7 +231,7 @@ while running:
     #VERY VERY VERY IMPORTANT THAT THIS IS THE LAST THING IN THE GAME LOOP
     pygame.display.flip()
     #KEEPS THE GAME AT A REASONABLE FRAMERATE
-    time.sleep(0.016666666)
+    time.sleep(0.032)
 
 #PUTS DEATHSCREEN ON THE SCREEN
 screen.blit(deathscreen, (0, 0))
