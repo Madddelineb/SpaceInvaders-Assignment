@@ -11,7 +11,7 @@ SCREEN_WIDTH = 500
 
 screen = pygame.display.set_mode([SCREEN_HEIGHT, SCREEN_WIDTH])
 clock = pygame.time.Clock() # to slow down the speed of movement
-FPS = 15 # to slow down the speed of movement
+FPS = 30 # to slow down the speed of movement
 
 player_img = pygame.image.load(r"C:\Users\22513062\OneDrive - Buckinghamshire New University\defender.png") #load in the image
 player_img = pygame.transform.scale(player_img, (35, 30)) # change the scale
@@ -47,12 +47,12 @@ def move_invaders():
     global invader_startcol, invader_endcol, invader_startrow, invader_endrow, move_right
     # start moving right 
     if move_right == True:
-        invader_startcol += 2
-        invader_endcol += 2
+        invader_startcol += 1
+        invader_endcol += 1
         edge_hit = False
     else: # otherwise move left
-        invader_startcol -= 2
-        invader_endcol -= 2
+        invader_startcol -= 1
+        invader_endcol -= 1
         edge_hit = False
     
     # detect edge of screen
