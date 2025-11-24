@@ -185,7 +185,7 @@ while running:
         #DRAWING BULLET
         screen.blit(bullet_img, (bulletx, bullety))
         #UPDATING BULLET POSITION
-        bullety -= 5
+        bullety -= 10
         print (bullety)
         #RESETING BULLET IF ITS OUT OF BOUNDS
         if bullety < -50:
@@ -195,7 +195,7 @@ while running:
     #EXACT SAME THING BUT WITH SECOND BULLET
     if fired2 == True:
         screen.blit(bullet_img, (bulletx2, bullety2))
-        bullety2 -= 5
+        bullety2 -= 10
         print (bullety2)
         if bullety2 < -50:
             fired2 = False
