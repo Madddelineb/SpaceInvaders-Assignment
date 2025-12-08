@@ -1,4 +1,4 @@
-### djdjdj
+### test
 # to make the player die just "alienplayercollision = True" inside the gameloop
 # line 75 needs death sequence added
 ###
