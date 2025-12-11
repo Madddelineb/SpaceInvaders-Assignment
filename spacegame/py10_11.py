@@ -214,7 +214,7 @@ while running:
     #bulletrect = pygame.Rect(bulletx, bullety, 3, 33)
     #invaderrect = pygame.Rect(invaderx, invadery, invaderxsize, invaderysize)
     #if bulletrect.colliderect(invaderrect):
-    #   Code for aliens dying here
+    #   Code for aliens dying would be here
     #
     #alienbulletrect = pygame.Rect(alienbulletx, alienbullety, alienbulletxsize, alienbulletysize)
     #playerrect = pygame.Rect(x, y, 44, 32)
@@ -223,19 +223,22 @@ while running:
 
 
     #UPDATES SCREEN
-    #VERY VERY VERY IMPORTANT THAT THIS IS THE LAST THING IN THE GAME LOOP
+    #VERY IMPORTANT THAT THIS IS THE LAST THING IN THE GAME LOOP
     pygame.display.flip()
-    #KEEPS THE GAME AT A REASONABLE FRAMERATE
+    #KEEPS THE GAME AT A REASONABLE FRAMERATE (~31 fps)
     time.sleep(0.032)
 
 #PUTS DEATHSCREEN ON THE SCREEN
 screen.blit(deathscreen, (0, 0))
+
 #UPDATES THE SCREEN
 pygame.display.flip()
+
 #WAITS 1 SECOND
 time.sleep(1)
 
 #CLOSES THE WINDOW
 pygame.quit()
 pygame.display.quit()
+
 
