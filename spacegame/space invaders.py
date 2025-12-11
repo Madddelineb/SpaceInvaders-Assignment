@@ -1,3 +1,6 @@
+#THIS IS NOT THE SPACE INVADERS MAIN FILE, THAT IS py10_11.py
+
+
 #testttt
 import pygame
 import sys
