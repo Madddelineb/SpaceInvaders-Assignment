@@ -1,8 +1,3 @@
-### test
-# to make the player die just "alienplayercollision = True" inside the gameloop
-# line 75 needs death sequence added
-###
-
 #IMPORTING LIBRARIES
 import pygame 
 import numpy as np
@@ -214,8 +209,8 @@ while running:
         y = 430
         lives -= 1
 
-    # COLLISIONS - Enable this part using your own variables when necassary
-    #
+    # COLLISIONS - Due to circumstances we never finished the alien's functionality, and so theres nothing for the player to collide with and take damage from and therefore this part of code is unused in the final product but exists as a simple way to enable collision if the aliens were programmed
+    # 
     #bulletrect = pygame.Rect(bulletx, bullety, 3, 33)
     #invaderrect = pygame.Rect(invaderx, invadery, invaderxsize, invaderysize)
     #if bulletrect.colliderect(invaderrect):
@@ -243,3 +238,4 @@ time.sleep(1)
 #CLOSES THE WINDOW
 pygame.quit()
 pygame.display.quit()
+
